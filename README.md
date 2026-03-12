@@ -150,7 +150,7 @@ blocks.Parent = workspace
 for x = 1, 16 do
   for z = 1, 16 do
     -- Generate noise
-    local noise = noiseGenerator1:OctavePerlin(x/50, z/50, 0) -- I didn't provide the ocatves and persistence args because we can use the defaults. Also I set z to 0 so we get a 2D slice. 50 is the scale we use to turns the ints into floats.
+    local noise = noiseGenerator1:OctavePerlin(x/10, z/10, 0) -- I didn't provide the ocatves and persistence args because we can use the defaults. Also I set z to 0 so we get a 2D slice. 50 is the scale we use to turns the ints into floats.
     local height = math.floor(noise * 8) -- 8 is the max height
 
     -- Show it in the world
