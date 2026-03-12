@@ -125,12 +125,12 @@ There are two functions you can use the generate noise:
 Returns the 3D Perlin noise value (from 0 to 1) for the given coordinates.
 
 ```luau
-local value = noiseGenerator1:Noise(5.5, 20.1, 9.3)
-print(value) -- 
+local value = perlin:Noise(5.5, 20.1, 9.3)
+print(value) -- 0.468
 
 -- Create a 2D slice
-local value2 = noiseGenerator1:Noise(5.5, 20.1, 0) -- I'm still providing a Z coordinate, but it's set to 0
-print(value) -- 
+local value2 = perlin:Noise(5.5, 20.1, 0) -- I'm still providing a Z coordinate, but it's set to 0
+print(value2) -- 0.671
 ```
 
 ### `Perlin:OctavePerlin(x, y, z, octaves: number?, persistence: number?)`
